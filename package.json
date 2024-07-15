@@ -1,6 +1,6 @@
 {
   "name": "easyin",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "This package will hold ui-kits",
   "main": "index.js",
   "scripts": {
