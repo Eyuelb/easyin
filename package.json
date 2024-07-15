@@ -1,0 +1,24 @@
+{
+  "name": "easyin",
+  "version": "1.0.0",
+  "description": "This package will hold ui-kits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eyuelb/easyin.git"
+  },
+  "keywords": [
+    "kit"
+  ],
+  "author": "Eyuel Belete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eyuelb/easyin/issues"
+  },
+  "homepage": "https://github.com/Eyuelb/easyin#readme",
+  "dependencies": {
+  }
+}
