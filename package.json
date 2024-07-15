@@ -1,6 +1,7 @@
 {
   "name": "easyin",
-  "version": "0.0.2",
+  "private": true,
+
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
@@ -10,10 +11,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "turbo build --filter=docs^... && changeset publish"
+    "release": "turbo run build lint && changeset publish",
+        "publish-packages": "turbo run build lint test && changeset version && changeset publish"
+
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
+    "@changesets/cli": "^2.27.7",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
