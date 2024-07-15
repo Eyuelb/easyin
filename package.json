@@ -1,10 +1,27 @@
 {
   "name": "easyin",
   "version": "0.0.2",
-  "description": "This package will hold ui-kits",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo build --filter=docs^... && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "turbo": "^2.0.6"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
   },
   "repository": {
     "type": "git",
@@ -18,19 +35,5 @@
   "bugs": {
     "url": "https://github.com/Eyuelb/easyin/issues"
   },
-  "homepage": "https://github.com/Eyuelb/easyin#readme",
-  "exports": {
-    "./add": {
-      "types": "./src/add.ts",
-      "default": "./dist/add.js"
-    },
-    "./subtract": {
-      "types": "./src/subtract.ts",
-      "default": "./dist/subtract.js"
-    }
-  },
-  "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "typescript": "latest"
-  }
+  "homepage": "https://github.com/Eyuelb/easyin#readme"
 }
